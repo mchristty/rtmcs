@@ -1,0 +1,12 @@
+{
+  "name": "rtmcs-backend",
+  "version": 2,
+  "builds": [
+    { "src": "index.js", "use": "@now/node-server" }
+  ],
+  "env": {
+    "ACCESS_KEY": "@aws_access_key",
+    "SECRET_ACCESS_KEY": "@aws_secret_access_key"
+  },
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
+}
